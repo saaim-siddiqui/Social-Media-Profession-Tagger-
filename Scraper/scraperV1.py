@@ -12,7 +12,7 @@ headers = list(dataset_df) # storing header names of all columns
 for header in headers:
     for i in range(len(dataset_df[header])):   # loop until whole column is scanned
         username = dataset_df.loc[i, header]   # storing username of a cell
-        username = str(username)
+        username = str(username)               # converting username to string 
         if(username.startswith('@')):
         # Using OS library to call CLI commands in Python
             os.system("snscrape --jsonl --max-results 10 twitter-search 'from:{}'> user-tweets.json".format(username))
