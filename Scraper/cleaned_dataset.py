@@ -5,7 +5,6 @@ import json
 import pandas as pd
 import ast
 
-from requests import head 
 
 cleaned_df = pd.read_csv("./Dataset/raw_tweets_dataSports.csv", skipinitialspace=True)
 cleaned_df.columns = cleaned_df.columns.str.rstrip()
