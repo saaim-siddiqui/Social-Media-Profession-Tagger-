@@ -60,14 +60,14 @@ for j in range(row_count-1):
     
     while(content_df.loc[i,'url'] == content_df.loc[i+1,'url']):
 
-        tweets += content_df.loc[i,'tweets'];
+        tweets += content_df.loc[i,'tweets']
             
         content_df.drop([i], inplace = True)   
 
         i = i+1
 
         if(i == row_count-1):
-            tweets += content_df.loc[i,'tweets'];
+            tweets += content_df.loc[i,'tweets']
             break
 
             
